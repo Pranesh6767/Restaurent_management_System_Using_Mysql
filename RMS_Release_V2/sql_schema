@@ -1,0 +1,30 @@
+table schema
+
+expences
+
+CREATE TABLE `Expences` (
+  `ID` INT AUTO_INCREMENT PRIMARY KEY,
+  `year` SMALLINT DEFAULT NULL,
+  `month` SMALLINT DEFAULT NULL,
+  `day` SMALLINT DEFAULT NULL,
+  `type` varchar(200) DEFAULT NULL,
+  `ammount` int DEFAULT NULL
+);
+
+
+CREATE TABLE `Expences` (
+  `ID` INT AUTO_INCREMENT PRIMARY KEY,
+  `type` varchar(200) DEFAULT NULL,
+  `ammount` int DEFAULT NULL
+);
+
+CREATE TABLE `workers` (
+  `ID` INT AUTO_INCREMENT PRIMARY KEY,
+  `fname` varchar(50) DEFAULT NULL,
+  `lname` varchar(50) DEFAULT NULL,
+  `Role` varchar(50) DEFAULT NULL,
+  `exp` SMALLINT DEFAULT NULL,
+  `salary` INT DEFAULT NULL,
+  `att_today` SMALLINT DEFAULT NULL,
+  `att_total` SMALLINT DEFAULT NULL
+);

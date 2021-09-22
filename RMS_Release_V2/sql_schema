@@ -1,19 +1,20 @@
 table schema
 
-expences
+USE freedbtech_RMS;
+CREATE TABLE `newhotelpune` (
+  `Recieptnumber` varchar(20) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `subtotal` varchar(20) DEFAULT NULL,
+  `discount` varchar(20) DEFAULT NULL,
+  `totalcost` varchar(20) DEFAULT NULL,
+  `datei` varchar(70) DEFAULT NULL
+);
 
 CREATE TABLE `Expences` (
   `ID` INT AUTO_INCREMENT PRIMARY KEY,
   `year` SMALLINT DEFAULT NULL,
   `month` SMALLINT DEFAULT NULL,
   `day` SMALLINT DEFAULT NULL,
-  `type` varchar(200) DEFAULT NULL,
-  `ammount` int DEFAULT NULL
-);
-
-
-CREATE TABLE `Expences` (
-  `ID` INT AUTO_INCREMENT PRIMARY KEY,
   `type` varchar(200) DEFAULT NULL,
   `ammount` int DEFAULT NULL
 );
@@ -28,3 +29,10 @@ CREATE TABLE `workers` (
   `att_today` SMALLINT DEFAULT NULL,
   `att_total` SMALLINT DEFAULT NULL
 );
+
+CREATE TABLE `Maintainance` (
+  `ID` INT AUTO_INCREMENT PRIMARY KEY,
+  `type` varchar(200) DEFAULT NULL,
+  `ammount` int DEFAULT NULL
+);
+
